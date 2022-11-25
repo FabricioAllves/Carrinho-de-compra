@@ -1,37 +1,37 @@
-import { useContext } from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { useContext } from 'react'
+import { View, Text, StyleSheet, FlatList, } from 'react-native'
 import { CartContext } from '../../contexts/CartContext'
+import CardItem from '../../components/CardItem'
 
-import CartItem from '../../components/CardItem'
+export default function Cart(){
+  const { cart, addItemCart, removeItemCart, total } = useContext(CartContext);
 
-export default function Cart() {
-  const { cart, addItemCart, removeItemCart, total } = useContext(CartContext)
 
-  return (
-    <View style={styles.container}>
+  return(
+    <View style={stlyes.container}>
       <FlatList
         data={cart}
         showsVerticalScrollIndicator={false}
-        keyExtractor={(item) => String(item.id)}
+        keyExtractor={ (item) => String(item.id) }
         ListEmptyComponent={ () => <Text>Nenhum item no carrinho...</Text>}
-        renderItem={({ item }) => (
-          <CartItem
-          data={item}
-          addAmount={ () => addItemCart(item) }
-          removeAmount={ () => removeItemCart(item)}
+        renderItem={ ({ item }) => (
+          <CardItem
+            data={item}
+            addAmount={ () => addItemCart(item) }
+            removeAmount={ () => removeItemCart(item) }
           />
         )}
-        ListFooterComponent={ () => <Text style={styles.total}>Total: R$ {total}</Text>}
+        ListFooterComponent={ () => <Text style={stlyes.total}>Total: R$ {total}</Text> }
       />
     </View>
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fafafa',
-    paddingStart: 14,
+const stlyes = StyleSheet.create({
+  container:{
+    flex:1,
+    backgroundColor: '#FAFAFA',
+    paddingStart: 14, 
     paddingEnd: 14,
     paddingTop: 14,
   },

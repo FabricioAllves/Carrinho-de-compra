@@ -6,7 +6,6 @@ export default function CardItem({ data,  addAmount, removeAmount }) {
 
   function handleIncrease(){
     addAmount();
-    removeAmount()
     setAmount(item => item + 1)
   }
 
