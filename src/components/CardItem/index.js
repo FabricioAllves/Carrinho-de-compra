@@ -43,11 +43,13 @@ export default function CardItem({ data,  addAmount, removeAmount }) {
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth: 1,
     borderColor: '#dfdfdf',
     borderRadius: 2,
     marginBottom: 14,
     padding: 8,
+    elevation: 8,
+    borderBottomWidth: 3,
+    shadowColor: '#000',
   },
   title:{
     fontWeight: 'bold',
