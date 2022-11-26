@@ -1,10 +1,22 @@
-import React, { useRef } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import React, { useRef, useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Modal } from 'react-native';
 
 import { Feather } from '@expo/vector-icons'
 
+import About from '../About';
+
 
 export default function Product({ data, addToCart }) {
+  const [visibleModal, setVisibleModal] = useState(false)
+
+
+  function ModalVisible(){
+    if(!visibleModal){
+        setVisibleModal(true)
+    }else{
+        setVisibleModal(false)
+    }
+}
 
 
   return (
@@ -12,7 +24,7 @@ export default function Product({ data, addToCart }) {
 
       <View style={styles.container1}>
 
-        <TouchableOpacity style={styles.buttonView}>
+        <TouchableOpacity style={styles.buttonView} onPress={ModalVisible}>
           <Image style={styles.img}
             resizeMode="cover"
             source={{ uri: data.img }}
@@ -33,8 +45,12 @@ export default function Product({ data, addToCart }) {
       </View>
 
       <TouchableOpacity style={styles.buttonAdd} onPress={addToCart}>
-        <Text style={styles.buttonText}>Carrinho</Text>
+        <Text style={styles.buttonText}>Comprar</Text>
       </TouchableOpacity>
+
+      <Modal transparent={true} animationType='slide' visible={visibleModal}>
+        <About infoAll={data} voltar={ModalVisible}/>
+      </Modal>
 
     </View>
   );

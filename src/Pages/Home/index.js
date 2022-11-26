@@ -197,7 +197,7 @@ export default function Home() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.cartContent}>
+     <View style={styles.cartContent}>
         <Text style={styles.title}>Vinhos</Text>
 
         <TouchableOpacity style={styles.cartButton} onPress={() => navigation.navigate("Cart")}>
@@ -244,7 +244,6 @@ export default function Home() {
         keyExtractor={(item) => String(item.id)}
         renderItem={({ item }) => <Product data={item} addToCart={() => handleAddCart(item)} />}
       />
-
     </SafeAreaView>
   );
 }
