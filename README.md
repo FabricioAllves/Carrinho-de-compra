@@ -16,7 +16,7 @@ Desafio passado dentro de um curso onde o projeto inicial era construir um app c
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/fabricio-26/Carrinho-de-compra/blob/main/LICENSE) para mais detalhes.
 
 ---
 
