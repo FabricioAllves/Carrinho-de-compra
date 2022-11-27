@@ -16,16 +16,13 @@ Desafio passado dentro de um curso onde o projeto inicial era construir um app c
 
 ## Executando o projeto
 
-Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
+Utilize o **yarn install** ou o **npm install** para instalar as dependências do projeto.
 Em seguida, inicie o projeto.
 
 ```cl
-yarn start
+npx expo start
 ```
-(se estiver no Linux e for rodar no android)
-```cl
-yarn android
-```
+
 
 ## :memo: Licença
 
