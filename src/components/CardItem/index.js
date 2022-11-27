@@ -53,9 +53,7 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     marginBottom: 14,
     padding: 8,
-    elevation: 8,
-    borderBottomWidth: 3,
-    shadowColor: '#000',
+    borderBottomWidth: 1,
   },
   viewTitlePrice:{
     paddingStart: 10
