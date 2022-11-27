@@ -14,6 +14,19 @@ Desafio passado dentro de um curso onde o projeto inicial era construir um app c
 - Context Api
 - JavaScript
 
+## Executando o projeto
+
+Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
+Em seguida, inicie o projeto.
+
+```cl
+yarn start
+```
+(se estiver no Linux e for rodar no android)
+```cl
+yarn android
+```
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/fabricio-26/Carrinho-de-compra/blob/main/LICENSE) para mais detalhes.
