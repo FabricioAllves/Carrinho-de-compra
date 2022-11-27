@@ -19,6 +19,7 @@ export default function Product({ data, addToCart }) {
 }
 
 
+
   return (
     <View style={styles.container}>
 
@@ -35,7 +36,7 @@ export default function Product({ data, addToCart }) {
         </TouchableOpacity>
 
         <View>
-          <Text style={styles.price}>R$ {data.price.toFixed(2)}</Text>
+          <Text style={styles.price}>R$ {data.price}</Text>
           <Text style={styles.title}>{data.name}</Text>
           <View style={styles.desconto}>
             <Text style={styles.descontoText}>{data.desconto}% off</Text>

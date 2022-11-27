@@ -26,10 +26,14 @@ export default function Home() {
   const [products, setProdutcs] = useState([
     {
       id: '1',
-      name: 'Tinto EA 2019',
+      name: 'Donã Paula estate',
       price: 19.90,
       desconto: 5,
-      img: 'https://cdn.shopify.com/s/files/1/0450/5783/5161/products/a0dce73331f126b0dce6b452fbcad1d2_1600x.jpg?v=1614949137'
+      img: 'https://th.bing.com/th/id/OIP.5WY0USaQDHqFcb5BBgR5ZQHaE0?pid=ImgDet&rs=1',
+      regiao: 'Mendoza',
+      pais: 'Argentina',
+      uvas: 'Malbec',
+      teor_alcoolico: '13.0 %'
     },
     {
       id: '2',
@@ -54,10 +58,10 @@ export default function Home() {
     },
     {
       id: '5',
-      name: 'Freixenet vintage',
+      name: 'Solaia',
       price: 149.99,
       desconto: 5,
-      img: 'https://i.pinimg.com/736x/64/9c/83/649c83bc5a2aa36853ed36c906abcfb3--drinks.jpg'
+      img: 'https://img.shoplineapp.com/media/image_clips/5f5a1637893bbb003cd7a82c/original.jpg?1599739446'
     },
     {
       id: '6',
@@ -197,7 +201,7 @@ export default function Home() {
 
   return (
     <SafeAreaView style={styles.container}>
-     <View style={styles.cartContent}>
+      <View style={styles.cartContent}>
         <Text style={styles.title}>Adega 97🍷</Text>
 
         <TouchableOpacity style={styles.cartButton} onPress={() => navigation.navigate("Cart")}>
@@ -211,25 +215,25 @@ export default function Home() {
       <ScrollView style={styles.scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
 
         <TouchableOpacity style={styles.scrollView}>
-          <Text style={[styles.textScroll, {color: "#d03"}]}>Promoções</Text>
+          <Text style={[styles.textScroll, { color: "#d03" }]}>Promoções</Text>
         </TouchableOpacity>
-        
+
         <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Tinto</Text>
         </TouchableOpacity>
-        
+
         <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Branco</Text>
         </TouchableOpacity>
-        
+
         <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Rose</Text>
         </TouchableOpacity>
-        
+
         <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Verde</Text>
         </TouchableOpacity>
-        
+
         <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Branco</Text>
         </TouchableOpacity>
