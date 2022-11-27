@@ -198,7 +198,7 @@ export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
      <View style={styles.cartContent}>
-        <Text style={styles.title}>Vinhos</Text>
+        <Text style={styles.title}>Adega 97🍷</Text>
 
         <TouchableOpacity style={styles.cartButton} onPress={() => navigation.navigate("Cart")}>
           <View style={styles.dot}>
@@ -210,29 +210,29 @@ export default function Home() {
 
       <ScrollView style={styles.scroll} horizontal={true} showsHorizontalScrollIndicator={false}>
 
-        <View style={styles.scrollView}>
+        <TouchableOpacity style={styles.scrollView}>
           <Text style={[styles.textScroll, {color: "#d03"}]}>Promoções</Text>
-        </View>
+        </TouchableOpacity>
         
-        <View style={styles.scrollView}>
+        <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Tinto</Text>
-        </View>
+        </TouchableOpacity>
         
-        <View style={styles.scrollView}>
+        <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Branco</Text>
-        </View>
+        </TouchableOpacity>
         
-        <View style={styles.scrollView}>
-          <Text style={styles.textScroll}>Promoções</Text>
-        </View>
+        <TouchableOpacity style={styles.scrollView}>
+          <Text style={styles.textScroll}>Rose</Text>
+        </TouchableOpacity>
         
-        <View style={styles.scrollView}>
-          <Text style={styles.textScroll}>Tinto</Text>
-        </View>
+        <TouchableOpacity style={styles.scrollView}>
+          <Text style={styles.textScroll}>Verde</Text>
+        </TouchableOpacity>
         
-        <View style={styles.scrollView}>
+        <TouchableOpacity style={styles.scrollView}>
           <Text style={styles.textScroll}>Branco</Text>
-        </View>
+        </TouchableOpacity>
 
 
       </ScrollView>
@@ -289,7 +289,7 @@ const styles = StyleSheet.create({
   scrollView: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: 20
+    marginRight: 20,
   },
   textScroll: {
     fontWeight: 'bold',
