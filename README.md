@@ -2,7 +2,7 @@
 <h1 align="center">Carrinho-de-compra</h1>
 
 
-<img alt="gif-cell" src="https://github.com/fabricio-26/Carrinho-de-compra/blob/main/src/img/Readme1.png">
+<img alt="gif-cell" src="https://github.com/fabricio-26/Carrinho-de-compra/blob/main/src/img/Readme.png">
 
 ## Sobre o projeto:
 
